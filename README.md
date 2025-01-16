@@ -11,7 +11,7 @@
 ##
 ```shellscript
 sh setup_whisper.sh
-``
+```
 
 ## 
 
