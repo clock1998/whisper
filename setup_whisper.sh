@@ -66,6 +66,18 @@ else
     fi
 fi
 
+# Step 6.1: Install FFmpeg
+if command_exists ffmpeg; then
+    echo "FFmpeg is already installed."
+else
+    echo "Installing FFmpeg..."
+    brew install ffmpeg
+    if [[ $? -ne 0 ]]; then
+        echo "Error: Failed to install FFmpeg."
+        exit 1
+    fi
+fi
+
 # Step 7: Clone whisper.cpp repository
 if [[ -d "whisper.cpp" ]]; then
     echo "whisper.cpp repository already exists."
