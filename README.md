@@ -1,4 +1,4 @@
-# Run whisper locally for lazy people.
+# Simple Scripts to Run whisper.cpp locally
 
 ## The current setup script only support Mac.
 
@@ -8,12 +8,6 @@
 - 5GB space (You can modify the scripts to use smaller model)
 - Internet connection
 
-## run_whisper.sh can be ran on Windows but extract steps need to be performed first.
-
-- Install Python
-- Install Cmake
-- Install Git
-
 ## Run setup_whisper.sh first to setup everything automatically.
 ```shellscript
 sh setup_whisper.sh
@@ -21,4 +15,8 @@ sh setup_whisper.sh
 ## Run
 ```shellscript
 sh setup_whisper.sh
+```
+
+```powershellscript
+setup_whisper.ps1
 ```
