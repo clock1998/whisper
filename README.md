@@ -1,21 +1,25 @@
 # Simple Scripts to Run whisper.cpp locally
 
-## The current setup script only support Mac.
+## The current setup_script.sh only support Mac.
 
-## Requirements:
+## setup_script.sh Requirements:
 
 - Apple Silicon 
 - 5GB space (You can modify the scripts to use smaller model)
 - Internet connection
 
-## Run setup_whisper.sh first to setup everything automatically.
+##
+```shellscript
+sh setup_whisper.sh
+``
+
+## 
+
 ```shellscript
 sh setup_whisper.sh
 ```
-## Run
-```shellscript
-sh setup_whisper.sh
-```
+
+For windows
 
 ```powershellscript
 setup_whisper.ps1
