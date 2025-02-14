@@ -134,4 +134,9 @@ if ($LASTEXITCODE -ne 0) {
 fi
 Write-Host "Whisper built successfully." -ForegroundColor Green
 
+./build/bin/quantize models/large-v3-turbo.bin models/large-v3-turbo.q5_0.bin q5_0
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Error: Failed quantize model." -ForegroundColor Red
+    exit 1
+fi
 Write-Host "Setup complete! whisper.cpp is ready to use." -ForegroundColor Green

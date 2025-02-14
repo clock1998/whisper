@@ -126,4 +126,9 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
+./build/bin/quantize models/ggml-large-v3-turbo.bin models/ggml-large-v3-turbo.q5_0.bin q5_0
+if [[ $? -ne 0 ]]; then
+    echo "Error: Failed to quantize model."
+    exit 1
+fi
 echo "Setup complete! Whisper is ready to use."
